@@ -1,50 +1,51 @@
-node_modules
-dist
-.DS_Store
-server/public
-vite.config.ts.*
-*.tar.gz
 
-# Environment files
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
 .env
 .env.local
-.env.production
-PRODUCTION_ENV.txt
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Google credentials (sensitive)
-attached_assets/
-google-credentials.json
-
-# Git and deployment files
-git-commands.sh
-push-clean.sh
-clean-git-history.sh
-
-# Uploads folder (contains user uploaded files)
-uploads/
-
-# Google credentials (sensitive)
-attached_assets/
-PRODUCTION_ENV.txt
-google-credentials.json
-
-# Git and deployment files
-git-commands.sh
-push-clean.sh
-
-# Test and temporary files
-test_uploads/
-
-# Database files
+# Database
 *.db
 *.sqlite
 
+# Uploads
+uploads/
+test_uploads/
+
+# Build outputs
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Sensitive files
+attached_assets/
+google-credentials.json
+PRODUCTION_ENV.txt
+git-commands.sh
+*.md
+!README.md
+
 # Logs
-logs
+logs/
 *.log
 
 # Runtime data
-pids
+pids/
 *.pid
 *.seed
 *.pid.lock
@@ -52,11 +53,6 @@ pids
 # Coverage directory used by tools like istanbul
 coverage/
 
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS files
-Thumbs.db
+# Temporary folders
+tmp/
+temp/
