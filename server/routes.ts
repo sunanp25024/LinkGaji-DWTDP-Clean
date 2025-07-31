@@ -122,7 +122,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
           registrationData as RegistrationData, 
           fileLinks
         );
-        console.log('Data added to Google Spreadsheet successfully');
+        console.log('✅ Data added to Google Spreadsheet successfully');
       } catch (spreadsheetError) {
         console.error('Error adding to Google Spreadsheet:', spreadsheetError);
         // Don't fail the request if spreadsheet fails, data is already saved to database
