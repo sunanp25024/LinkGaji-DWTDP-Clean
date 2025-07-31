@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Calendar, CreditCard, AlertTriangle, CheckCircle } from "lucide-react";
 import { Link } from "wouter";
+import tdpLogo from "@assets/TDP_1753902031441.png";
 
 export default function LandingPage() {
   return (
@@ -10,10 +11,11 @@ export default function LandingPage() {
       <header className="bg-white shadow-sm border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-4 py-4 sm:py-6">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            {/* Logo will be added later when asset is available */}
-            <div className="w-16 h-16 sm:w-20 sm:h-20 bg-blue-100 border-2 border-blue-300 rounded-lg flex items-center justify-center">
-              <span className="text-blue-600 font-bold text-xs">TDP</span>
-            </div>
+            <img 
+              src={tdpLogo} 
+              alt="TDP Logo" 
+              className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+            />
             <div className="text-center sm:text-left">
               <h1 className="text-2xl sm:text-3xl font-bold text-blue-600">
                 SISTEM PENGGAJIAN DAILY WORKER TDP
