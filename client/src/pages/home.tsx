@@ -13,6 +13,7 @@ import { EmergencyContactSection } from '@/components/form-sections/emergency-co
 import { BankInfoSection } from '@/components/form-sections/bank-info';
 import { AdditionalInfoSection } from '@/components/form-sections/additional-info';
 import { DocumentUploadSection } from '@/components/form-sections/document-upload';
+import tdpLogo from "@assets/TDP_1753902031441.png";
 
 function ProgressIndicator() {
   const { currentPage } = useFormContext();
@@ -400,9 +401,11 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-4 py-4 sm:py-6">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <div className="flex items-center space-x-3 sm:space-x-4">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 border-2 border-blue-300 rounded-lg flex items-center justify-center">
-                  <span className="text-blue-600 font-bold text-xs">TDP</span>
-                </div>
+                <img 
+                  src={tdpLogo} 
+                  alt="TDP Logo" 
+                  className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+                />
                 <div className="text-center sm:text-left">
                   <h1 className="text-lg sm:text-2xl font-bold text-blue-600">
                     LINK PENGGAJIAN DW TDP
