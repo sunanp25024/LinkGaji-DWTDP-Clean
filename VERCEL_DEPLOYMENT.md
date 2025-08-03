@@ -1,10 +1,12 @@
 # 🚀 Panduan Deploy ke Vercel - Langkah Demi Langkah
 
+**✅ MASALAH VERCEL SUDAH DIPERBAIKI** - Konflik `builds` vs `functions` sudah diatasi!
+
 ## 📋 Persiapan Sebelum Deploy
 
 ### ✅ Yang Harus Sudah Ada:
 - [x] Repository GitHub sudah dibuat dan ter-push
-- [x] File `vercel.json` sudah ada
+- [x] File `vercel.json` sudah diperbaiki (menggunakan `functions` dan `rewrites`)
 - [x] File `.env.example` untuk reference
 - [x] Build script di `package.json` sudah configured
 
